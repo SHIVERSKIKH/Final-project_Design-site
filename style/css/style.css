@@ -188,3 +188,49 @@ body {
   background-position: center;
   background-size: contain;
 }
+
+.advantages {
+  background: #F4F0EC;
+  padding: 151px 0 151px;
+}
+.advantages__wrp {
+  max-width: 1082px;
+  width: 100%;
+}
+.advantages__list {
+  max-width: 1082px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.advantages__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.advantages__item:not(:last-child)::after {
+  content: "";
+  width: 1px;
+  position: absolute;
+  height: 130px;
+  background: #CDA274;
+  top: 18px;
+  right: -64px;
+}
+.advantages__item span {
+  color: #CDA274;
+  font-family: DM Serif Display;
+  font-size: 85px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 106.25px;
+  letter-spacing: 1.7px;
+  margin: 0 0 16px 0;
+}
+.advantages__txt {
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0.22px;
+}
