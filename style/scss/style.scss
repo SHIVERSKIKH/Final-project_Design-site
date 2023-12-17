@@ -10,7 +10,7 @@ body {
     color: #4D5053;
 }
 .center {
-    max-width: 1200px;
+    max-width: 1240px;
     width: 100%;
     padding: 0 20px;
     box-sizing: border-box;
@@ -21,17 +21,6 @@ body {
     &__top {
         margin: 0 0 53px 0;
         @include flexSpaceBetween;
-    }
-    &__logo{
-        width: 177px;
-        height: 50px;
-    }
-    &__logo-link {
-        display: block;
-        width: 177px;
-        height: 50px;
-        background: url(../../img/Logo.png);
-        @include backgroundCenterContain;
     }
     &__menu {
         max-width: 243px;
@@ -95,19 +84,23 @@ body {
         margin-left: 10px;
     }
 }
+.logo{
+    width: 177px;
+    height: 50px;
+}
+.logo-link {
+    display: block;
+    width: 177px;
+    height: 50px;
+    background: url(../../img/Logo.png);
+    @include backgroundCenterContain;
+}
 .product {
     padding: 0 0 96px 0;
     &__title {
         max-width: 452px;
         width: 100%;
-        color: #292F36;
-        text-align: center;
-        font-family: DM Serif Display;
-        font-size: 50px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 62.5px;
-        letter-spacing: 1px;
+        @extend %main-title;
         margin: 0 auto 8px;
     }
     &__txt {
@@ -165,8 +158,6 @@ body {
         width: 70px;
         height: 70px;
         display: block;
-        background: url(../../img/_btn.svg);
-        @include backgroundCenterContain;
     }
 }
 .advantages {
@@ -212,3 +203,157 @@ body {
         letter-spacing: 0.22px;
     }
 }
+.news {
+    padding: 96px 0 96px;
+    &__title {
+        @extend %main-title;
+        margin: 0 auto 12px 0;
+    }
+    &__txt {
+        max-width: 811px;
+        width: 100%;
+        text-align: center;
+        font-size: 22px;
+        line-height: 33px;
+        letter-spacing: 0.22px;
+        margin: 0 auto 52px;
+    }
+    &__info-list {
+        @include flexSpaceBetween;
+    }
+    &__info-item {
+        max-width: 382px;
+        width: 100%;
+        border-radius: 62px;
+        border: 1px solid #E7E7E7;
+        box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
+        padding: 21px;
+    }
+    &__info-content {
+        position: relative;
+        margin: 0 0 20px 0;
+    }
+    &__info-content_txt {
+        @include flexCenter;
+        width: 124px;
+        height: 41px;
+        border-radius: 8px 8px 8px 0px;
+        background: #FFF;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.16px;
+        text-transform: capitalize;
+        position: absolute;
+        top: 231px;
+        left: 19px;
+    }
+    &__info-title {
+        max-width: 305px;
+        width: 100%;
+        color: #292F36;
+        font-family: DM Serif Display;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 31.25px;
+        letter-spacing: 0.5px;
+        margin: 0 0 39px 0;
+    }
+    &__info-txt {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.16px;
+        text-transform: capitalize;
+    }
+    &__info-container {
+        max-width: 340px;
+        width: 100%;
+        @include flexSpaceBetween;
+    }
+}
+.footer {
+    padding:0  0 134px 0;
+    &__wrp {
+        min-height: 272px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__info {
+        max-width: 393px;
+        width: 100%;
+    }
+    &__info-txt {
+        max-width: 393px;
+        width: 100%;
+        font-size: 22px;
+        line-height: 33px;
+        letter-spacing: 0.22px;
+        margin: 0 0 31px 0;
+    }
+    &__social {
+        max-width: 225px;
+        width: 100%;
+    }
+    &__social-list {
+        display: flex;
+        align-items: center;
+        gap: 54px;
+    }
+    &__menu {
+        max-width: 125px;
+        width: 100%;
+        min-height: 238px;
+    }
+    &__menu-list {
+        max-width: 125px;
+        width: 100%;
+        min-height: 238px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__menu-title {
+        color: #292F36;
+        font-family: DM Serif Display;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 31.25px;
+    }
+    &__menu-link {
+        color: #4D5053;
+        font-size: 22px;
+        line-height: 66px;
+        letter-spacing: 0.22px;
+    }
+    &__contact {
+        max-width: 258px;
+        width: 100%;
+        min-height: 272px;
+    }
+    &__contact-list {
+        max-width: 258px;
+        width: 100%;
+        min-height: 272px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__contact-title {
+        color: #292F36;
+        font-family: DM Serif Display;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 31.25px;
+    }
+    &__contact-link {
+        color: #4D5053;
+        font-size: 22px;
+        line-height: 33px;
+        letter-spacing: 0.22px;
+    }
+}
+.logo-footer {
+    margin: 0 0 18px 0;
+} 
