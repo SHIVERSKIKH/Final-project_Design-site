@@ -28,6 +28,13 @@ a, button {
     .news__info-item:hover circle {
         fill:white;
     }
+    .news__paginat-link svg:hover {
+        fill: #F4F0EC;
+        stroke: none;
+    }
+    .news__paginat-link circle:hover {
+        stroke: none;
+    }
     .footer__menu-link:hover, .footer__contact-link:hover {
         color: #CDA274;
     }
