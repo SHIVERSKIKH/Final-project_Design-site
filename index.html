@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/vue@next"></script>
     <title>Interior Design</title>
 </head>
 <body>
@@ -147,7 +148,26 @@
                     <p class="news__txt">It&nbsp;is&nbsp;a&nbsp;long established fact that a&nbsp;reader will be&nbsp;distracted by&nbsp;the of&nbsp;readable content of&nbsp;a&nbsp;page when lookings at&nbsp;its layouts the points of&nbsp;using.</p>
                 </div>
                 <div class="news__info">
-                    <div class="news__info-list">
+                    <div id="app" class="news__wrp">
+                        <article v-for="item in articles.slice(0,3)" :key="item.id" class="news__info-item">
+                            <div>
+                                <div class="news__info-content">
+                                    <div class="news__info-img_wrp">
+                                        <img :src="item.url" alt="images" class="news__info-images">
+                                    </div>
+                                </div>
+                                <div class="news__info-wrapper">
+                                    <h3 class="news__info-title" v-html="item.description"></h3>
+                                    <div class="news__info-container">
+                                        <p class="news__info-txt">{{ item.data}}</p>
+                                        <a v-html="item.link" href="#" class="news__info-btn">
+                                            </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- <div class="news__info-list">
                         <article class="news__info-item">
                             <div>
                                 <div class="news__info-content">
@@ -173,6 +193,7 @@
                                 <div class="news__info-content">
                                 <div class="news__info-img_wrp">
                                     <img src="img/news2.png" alt="images" class="news__info-images">
+                                </div>
                                 </div>
                                 <div>
                                 <div class="news__info-wrapper">
@@ -206,7 +227,7 @@
                                 </div>
                             </div>
                         </article>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -267,5 +288,6 @@
             </div>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
