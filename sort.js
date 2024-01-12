@@ -94,7 +94,7 @@ const Copmonent = {
                         <button class="tags__button bedroom-btn" :class="{ 'active_tabs': currentTab === 'bedroom' }" @click="changeTab('bedroom')" >Bedroom</button>
                     </div>
                     <div class="tags__btn-wrp">
-                        <button class="tags__button building-btn" :class="{ 'active_tabs': currentTab === 'bulding' }" @click="changeTab('building')">Building</button>
+                        <button class="tags__button building-btn" :class="{ 'active_tabs': currentTab === 'building' }" @click="changeTab('building')">Building</button>
                         <button class="tags__button architecture-btn" :class="{ 'active_tabs': currentTab === 'architecture' }"  @click="changeTab('architecture')">Architecture</button>
                     </div>
                     <div class="tags__btn-wrp">
