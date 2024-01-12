@@ -1,7 +1,7 @@
 @import "../css/hover.css";
 @import "../css/normalize.css";
 @import "../css/nulling-styles.css";
-.post__title, .blog__info-title, .news__title, .product__title {
+.design__sprint-title, .design__title, .post__title, .blog__info-title, .news__title, .product__title {
   color: #292F36;
   text-align: center;
   font-family: DM Serif Display;
@@ -328,6 +328,192 @@
   text-align: left;
 }
 
+.active_tabs {
+  background: #292F36 !important;
+  color: white;
+}
+
+.blog-details {
+  min-height: 351px;
+  background: url(../../img/blog_details.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.main {
+  padding: 104px 0 96px;
+}
+.main__container {
+  max-width: 1201px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-start;
+}
+
+.design__title {
+  max-width: 684px;
+  width: 100%;
+  min-height: 126px;
+  margin: 0 0 11px 0;
+  text-align: start;
+}
+.design__wrp, .design__img {
+  max-width: 799px;
+  width: 100%;
+  max-height: 539px;
+  margin: 0 0 46px 0;
+}
+.design__date {
+  max-width: 804px;
+  width: 100%;
+  min-height: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 48px 0;
+}
+.design__date-txt {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+  text-transform: capitalize;
+}
+.design__info {
+  margin: 0 0 35px 0;
+}
+.design__txt {
+  max-width: 799px;
+  width: 100%;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0.22px;
+}
+.design__txt:first-child {
+  margin: 0 0 45px 0;
+}
+.design__details {
+  max-width: 799px;
+  width: 100%;
+  padding: 53px 224px;
+  border-radius: 50px;
+  background: #F4F0EC;
+  margin: 0 0 27px 0;
+}
+.design__details-wrp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.design__details-img {
+  width: 106px;
+  height: 113px;
+  background: url(../../img/icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.design__details-txt {
+  max-width: 351px;
+  width: 100%;
+  color: #CDA274;
+  text-align: center;
+  font-family: DM Serif Display;
+  font-size: 25px;
+  font-style: italic;
+  line-height: 31.25px;
+  letter-spacing: 0.5px;
+}
+.design__sprint-title {
+  max-width: 560px;
+  width: 100%;
+  text-align: start;
+  margin: 0 0 20px 0;
+}
+.design__sprint-txt {
+  max-width: 799px;
+  width: 100%;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0.22px;
+}
+.design__sprint-txt:not(:last-child) {
+  margin: 0 0 24px 0;
+}
+.design__sprint-list {
+  padding: 0 0 12px 0;
+}
+.design__sprint-item {
+  max-width: 732px;
+  width: 100%;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0.22px;
+  margin: 0 0 32px 0;
+  padding-left: 19px;
+  position: relative;
+}
+.design__sprint-item::before {
+  position: absolute;
+  width: 8px;
+  height: 25px;
+  color: #CDA274;
+  font-family: DM Serif Display;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.4px;
+  top: 0;
+  left: 0;
+}
+.design__sprint-item:first-child::before {
+  content: "1";
+}
+.design__sprint-item:nth-child(2)::before {
+  content: "2";
+}
+.design__sprint-item:last-child::before {
+  content: "3";
+}
+.design__sprint-img, .design__sprint-wrp {
+  max-width: 799px;
+  width: 100%;
+  max-height: 365px;
+  margin: 0 0 35px 0;
+}
+
+.tags {
+  max-width: 345px;
+  width: 100%;
+}
+.tags__title {
+  color: #292F36;
+  font-family: DM Serif Display;
+  font-size: 25px;
+  line-height: 31.25px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  margin: 0 0 24px 0;
+}
+.tags__btn {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+.tags__btn-wrp {
+  display: flex;
+  gap: 10px;
+}
+.tags__button {
+  border-radius: 10px;
+  background: #F4F0EC;
+  padding: 9px 30px;
+  font-size: 18px;
+  line-height: 22.5px;
+  letter-spacing: 0.36px;
+}
+
 body {
   font-family: "Jost", sans-serif;
   font-style: normal;
@@ -344,10 +530,10 @@ body {
 }
 
 .header {
-  padding: 53px 0 96px 0;
+  padding: 44px 0 96px 0;
 }
 .header__top {
-  margin: 0 0 53px 0;
+  margin: 0 0 45px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
