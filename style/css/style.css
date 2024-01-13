@@ -365,6 +365,7 @@
   width: 100%;
   max-height: 539px;
   margin: 0 0 46px 0;
+  border-radius: 50px;
 }
 .design__date {
   max-width: 804px;
@@ -481,6 +482,7 @@
   width: 100%;
   max-height: 365px;
   margin: 0 0 35px 0;
+  border-radius: 50px;
 }
 
 .tags {
