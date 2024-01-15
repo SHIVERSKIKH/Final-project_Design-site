@@ -4,6 +4,7 @@
 @import "_variables.scss";
 @import "_homePages";
 @import "_blogPages";
+@import "_blogDetails";
 
 body {
     font-family: 'Jost', sans-serif;
@@ -19,9 +20,9 @@ body {
     margin: 0 auto;
 }
 .header {
-    padding: 53px 0 96px 0;
+    padding: 44px 0 96px 0;
     &__top {
-        margin: 0 0 53px 0;
+        margin: 0 0 45px 0;
         @include flexSpaceBetween;
     }
     &__menu {

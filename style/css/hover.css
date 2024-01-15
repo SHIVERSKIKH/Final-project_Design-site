@@ -35,6 +35,10 @@ a, button {
     .news__paginat-link circle:hover {
         stroke: none;
     }
+    .tags__button:hover {
+        background: #292F36;
+        color: #ffff;
+    }
     .footer__menu-link:hover, .footer__contact-link:hover {
         color: #CDA274;
     }
